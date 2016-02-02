@@ -20,6 +20,6 @@ elseif GeneralCount >= 0 then
 	if C then 
 		CountC <- CountC + 1
 
-	else 
+	elseif 
 		RejectedCount <- RejectedCount + 1
 		output ("No Real Identification")
