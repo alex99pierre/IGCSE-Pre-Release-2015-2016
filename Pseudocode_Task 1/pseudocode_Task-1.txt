@@ -1,0 +1,42 @@
+GeneralCount = 0
+
+if GeneralCount = 0 then
+	CountS = 0
+	CountG = 0
+	CountC = 0
+	RejectedCount = 0
+
+elseif GeneralCount >= 0 then
+	weight <- userinput
+	GeneralCount <- GeneralCount + 1
+	
+	if S then 
+		CountS <- CountS + 1
+		if 49.9 < weight < 50.1 then
+			#store type and weight
+		elseif weight =< 49.9 then
+			output ("Rejected - To Light")
+		elseif weight >= 50.1 then
+			output ("Rejected - To heavy")
+			
+	if G then
+		CountG <- CountG + 1
+		if 49.9 < weight < 50.1 then
+			#store type and weight
+		elseif weight =< 49.9 then
+			output ("Rejected - To Light")
+		elseif weight >= 50.1 then
+			output ("Rejected - To heavy")
+
+	if C then 
+		CountC <- CountC + 1
+		if 24.9 < weight < 25.1 then
+			#store type and weight
+		elseif weight =< 24.9 then
+			output ("Rejected - To Light")
+		elseif weight >= 25.1 then
+			output ("Rejected - To heavy")
+
+	else 
+		RejectedCount <- RejectedCount + 1
+		output ("No Real Identification")
