@@ -1,0 +1,36 @@
+MissingS = 0
+MissingG = 0
+MissingC = 0
+NoS = 0
+NoG = 0 
+NoC = 0
+TotalWeight = 0
+
+output ("Dou you want S? y or n")
+if y then
+	output ("Input amount of S") 
+	NoS <- userinput
+
+output ("Do you want G? y or n")
+if y then 
+	output ("Input amount of G")
+	NoG <- userinput
+
+output("Do you want C? y or n")
+if y then
+	output ("Input amount of C")
+	NoC <- userinput
+
+#Task 1 goes here# 
+
+if NoS >= then
+	MissingC <- NoC - CountC
+	output ("You need", MissingC, "more C")
+
+if NoG >= then 
+	MissingG <- NoG - CountG
+	output ("You need", MissingG, "more G")
+
+if NoC >= then 
+	MissingC <- NoG - CountC
+	output ("You need", MissingC, "more C")
