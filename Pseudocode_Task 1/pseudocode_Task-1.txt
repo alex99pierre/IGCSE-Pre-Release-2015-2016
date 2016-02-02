@@ -1,12 +1,10 @@
 GeneralCount = 0
+CountS = 0
+CountG = 0
+CountC = 0
+RejectedCount = 0
 
-if GeneralCount = 0 then
-	CountS = 0
-	CountG = 0
-	CountC = 0
-	RejectedCount = 0
-
-elseif GeneralCount >= 0 then
+for GeneralCounter >= 1 do
 	weight <- userinput
 	GeneralCount <- GeneralCount + 1
 	
