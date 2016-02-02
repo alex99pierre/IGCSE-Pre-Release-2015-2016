@@ -1,0 +1,25 @@
+GeneralCount = 0
+
+if GeneralCount = 0 then
+	CountS = 0
+	CountG = 0
+	CountC = 0
+	RejectedCount = 0
+
+elseif GeneralCount >= 0 then
+	weight <- userinput
+	GeneralCount <- GeneralCount + 1
+	
+	if S then 
+		CountS <- CountS + 1
+		
+
+	if G then
+		CountG <- CountG + 1
+	
+	if C then 
+		CountC <- CountC + 1
+
+	else 
+		RejectedCount <- RejectedCount + 1
+		output ("No Real Identification")
