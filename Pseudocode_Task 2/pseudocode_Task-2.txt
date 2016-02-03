@@ -24,7 +24,7 @@ if y then
 
 #Task 1 goes here# 
 
-for TotalMissing >= 0 do
+while TotalMissing > 0 do
 
 	if NoS >= CountS then
 		MissingC <- NoC - CountC
