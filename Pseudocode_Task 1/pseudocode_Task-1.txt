@@ -3,17 +3,19 @@ CountS <- 0
 CountG <- 0
 CountC <- 0
 RejectedCount <- 0
+weight = 0
+Stype = 0
 
 for GeneralCounter >= 1 do
 	GeneralCount <- GeneralCount + 1
 	weight <- userinput
-	type <- userinput
+	Stype <- userinput
 	
-	if type == "S" then 
+	if Stype == "S" then 
 		CountS <- CountS + 1
 
 		if 49.9 < weight < 50.1 then
-			#store type and weight
+			#store Stype and weight
 		elseif weight =< 49.9 then
 			RejectedCount <- RejectedCount + 1
 			output ("Rejected - To Light")
@@ -21,22 +23,22 @@ for GeneralCounter >= 1 do
 			RejectedCount <- RejectedCount + 1
 			output ("Rejected - To heavy")
 			
-	if type == "G" then
+	if Stype == "G" then
 		CountG <- CountG + 1
 
 		if 49.9 < weight < 50.1 then
-			#store type and weight
+			#store Stype and weight
 		elseif weight =< 49.9 then
 			RejectedCount <- RejectedCount + 1
 			output ("Rejected - To Light")
 		elseif weight >= 50.1 then
 			output ("Rejected - To heavy")
 
-	if type == "C" then 
+	if Stype == "C" then 
 		CountC <- CountC + 1
 
 		if 24.9 < weight < 25.1 then
-			#store type and weight
+			#store Stype and weight
 		elseif weight =< 24.9 then
 			RejectedCount <- RejectedCount + 1
 			output ("Rejected - To Light")
