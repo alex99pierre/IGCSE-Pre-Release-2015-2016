@@ -24,22 +24,24 @@ if y then
 
 #Task 1 goes here# 
 
-if NoS >= CountS then
-	MissingC <- NoC - CountC
-	output ("You need", MissingC, "more C")
+for TotalMissing >= 0 do
 
-if NoG >= CountG then 
-	MissingG <- NoG - CountG
-	output ("You need", MissingG, "more G")
+	if NoS >= CountS then
+		MissingC <- NoC - CountC
+		output ("You need", MissingC, "more C")
 
-if NoC >= CountC then 
-	MissingC <- NoG - CountC
-	output ("You need", MissingC, "more C")
+	if NoG >= CountG then 
+		MissingG <- NoG - CountG
+		output ("You need", MissingG, "more G")
+
+	if NoC >= CountC then 
+		MissingC <- NoG - CountC
+		output ("You need", MissingC, "more C")
 	
-MissingTotal <- MissingS + MissingG + MissingC
+	MissingTotal <- MissingS + MissingG + MissingC
 
-if MissingTotal > 0 then 
-	output("You currently have")
-	output(NoS, "/", MissingS, " Sand")
-	output(NoG, "/", MissingG, " Gravel")
-	output("NoC, "/", MissingG," Cement")
+	if MissingTotal > 0 then 
+		output("You currently have")
+		output(NoS, "/", MissingS, " Sand")
+		output(NoG, "/", MissingG, " Gravel")
+		output("NoC, "/", MissingG," Cement")
