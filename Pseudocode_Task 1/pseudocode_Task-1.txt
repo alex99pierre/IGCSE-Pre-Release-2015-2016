@@ -1,7 +1,7 @@
-GeneralCount = 0
-CountS = 0
-CountG = 0
-CountC = 0
+GeneralCount <- 0
+CountS <- 0
+CountG <- 0
+CountC <- 0
 RejectedCount = 0
 
 for GeneralCounter >= 1 do
