@@ -3,8 +3,8 @@ CountS <- 0
 CountG <- 0
 CountC <- 0
 RejectedCount <- 0
-weight = 0
-Stype = 0
+weight <- 0
+Stype <- 0
 
 for GeneralCounter >= 1 do
 	GeneralCount <- GeneralCount + 1
