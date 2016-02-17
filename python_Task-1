@@ -14,7 +14,7 @@ while GeneralCount < 10:
     print("Please enter weight")
     weight = input()
 
-    if Stype == "S" or "s":
+    if Stype == "S" or Stype == "s":
         if 49.9 < float(weight) < 50.1:
             CountS += 1
             print ("Store Weight") #replace with storage code
@@ -27,7 +27,7 @@ while GeneralCount < 10:
             RejectedCount += 1
             print ("Rejected - Too Heavy")
 
-    if Stype == "G" or "g":
+    elif Stype == "G" or Stype == "g":
         if 49.9 < float(weight) < 50.1:
             CountG += 1
             print ("Store Weight") #replace with storage code
@@ -40,7 +40,22 @@ while GeneralCount < 10:
             RejectedCount += 1
             print ("Rejected - Too Heavy")
 
+    elif Stype == "C" or Stype == "c":
+        if 49.9 < float(weight) < 50.1:
+            CountC += 1
+            print ("Store Weight") #replace with storage code
+       
+        elif float(weight) <= 49.9:
+            RejectedCount += 1
+            print ("Rejected - Too Light")
+            
+        elif float(weight) >= 50.1:
+            RejectedCount += 1
+            print ("Rejected - Too Heavy")
 
+    else:
+        RejectedCount += 1
+        print ("Rejected - No type of identification")
 
     print ("Sand:     ", CountS)
     print ("Gravel:   ", CountG)
