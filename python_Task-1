@@ -6,6 +6,43 @@ RejectedCount = 0
 weight = 0
 Stype = 0
 
+MissingS = 0
+MissingG = 0
+MissingC = 0
+MissingTotal = 0
+NoS = 0
+NoG = 0 
+NoC = 0
+NoTotal
+InputS = 0
+InputG = 0
+InputC = 0
+TotalWeight = 0
+
+#Task 2
+print ("Do you want S?")
+InputS = input("y or n")
+if InputS == ("y") or InputS == ("Y"):
+    NoS = input("Input the desired amount S")
+
+print ("Do you want G?")
+InputG = input("y or n")
+if InputG == ("y") or InputG == ("Y"):
+    NoG = input("Input the desired amount G")
+
+print ("Do you want C?")
+InputC = input("y or n")
+if InputC == ("y") or InputC == ("Y"):
+    NoC = input("Input the desired amount C")
+
+NoTotal = NoS + NoG + NoC
+    
+print ("NoS :", NoS)
+print ("NoG :", NoG)
+print ("NoC :", NoC)
+print ("NoTotal :", NoTotal)
+
+#Task 1
 while GeneralCount < 10:
     GeneralCount += 1
     print("Please enter S for Sand, G for Gravel, S for Sand")
